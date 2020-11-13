@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+    <VerticalLayout width="400" height="300" bkcolor="#FFFFFFFF">
+        <HorizontalLayout height="30">
+            <VerticalLayout text="电话收费管理系统-登录" width="308" height="30" />
+            <VerticalLayout width="91" height="30">
+                <Button name="minbtn" tooltip="最小化" float="true" pos="13,10,0,0" width="25" height="13" 
+				normalimage=" file='../Resource/icon_min.png' source='0,0,36,24'" 
+				hotimage=" file='../Resource/icon_min.png' source='36,0,72,24'" 
+				pushedimage=" file='../Resource/icon_min.png' source='72,0,108,24'"
+				/>
+                <Button name="closebtn" tooltip="关闭"
+				float="true" pos="51,10,0,0" width="25" height="13" 
+				normalimage=" file='../Resource/icon_close.png' source='0,0,36,24'" 
+				hotimage=" file='../Resource/icon_close.png' source='36,0,72,24'" 
+				pushedimage=" file='../Resource/icon_close.png' source='72,0,108,24'" />
+            </VerticalLayout>
+        </HorizontalLayout>
+        <HorizontalLayout width="95" height="262" />
+    </VerticalLayout>
+</Window>

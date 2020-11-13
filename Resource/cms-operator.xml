@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="800,515" caption="0,0,0,128" mininfo="800,515">
+    <Font id="0" name="微软雅黑" size="15" bold="false" italic="false" />
+    <Font id="1" name="微软雅黑" size="21" bold="false" italic="false" />
+    <HorizontalLayout bordersize="1" width="800" height="515" bkcolor="#FFFFFFFF" bordercolor="#00FFA924">
+        <Control name="ctrlGray" visible="false" float="true" pos="0,0,0,0" width="800" height="515" bkcolor="#FFB6B8B9" />
+        <VerticalLayout name="layoutNavigate" width="120">
+            <HorizontalLayout height="100">
+                <Label text="收费管理系统" float="true" pos="8,34,0,0" width="106" height="33" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="0" align="center" />
+            </HorizontalLayout>
+            <HorizontalLayout height="315">
+                <Option name="optHome" text="首  页" float="true" pos="0,53,0,0" width="120" height="30" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" font="0" align="center" normalimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;0,0,26,26&apos; corner=&apos;10,10,10,10&apos;" hotimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;26,0,52,26&apos; corner=&apos;10,10,10,10&apos;" pushedimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;52,0,78,26&apos; corner=&apos;10,10,10,10&apos;" group="opts" selected="true" selectedimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;52,0,78,26&apos; corner=&apos;10,10,10,10&apos;" />
+                <Option name="optCharge" text="用户缴费" float="true" pos="0,106,0,0" width="120" height="30" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" font="0" align="center" normalimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;0,0,26,26&apos; corner=&apos;10,10,10,10&apos;" hotimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;26,0,52,26&apos; corner=&apos;10,10,10,10&apos;" pushedimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;52,0,78,26&apos; corner=&apos;10,10,10,10&apos;" group="opts" selectedimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;52,0,78,26&apos; corner=&apos;10,10,10,10&apos;" />
+                <Option name="optUserMgr" text="用户管理" float="true" pos="1,159,0,0" width="120" height="30" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" font="0" align="center" normalimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;0,0,26,26&apos; corner=&apos;10,10,10,10&apos;" hotimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;26,0,52,26&apos; corner=&apos;10,10,10,10&apos;" pushedimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;52,0,78,26&apos; corner=&apos;10,10,10,10&apos;" group="opts" selectedimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;52,0,78,26&apos; corner=&apos;10,10,10,10&apos;" />
+                <Option name="optAdmin" text="综合管理" float="true" pos="1,212,0,0" width="120" height="30" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" font="0" align="center" normalimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;0,0,26,26&apos; corner=&apos;10,10,10,10&apos;" hotimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;26,0,52,26&apos; corner=&apos;10,10,10,10&apos;" pushedimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;52,0,78,26&apos; corner=&apos;10,10,10,10&apos;" group="opts" selectedimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;52,0,78,26&apos; corner=&apos;10,10,10,10&apos;" />
+            </HorizontalLayout>
+            <HorizontalLayout />
+        </VerticalLayout>
+        <VerticalLayout>
+            <HorizontalLayout height="40">
+                <VerticalLayout width="600" height="40">
+                    <Label name="labelTitle" float="true" pos="23,5,0,0" width="120" height="30" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+                </VerticalLayout>
+                <VerticalLayout width="80" height="40">
+                    <Button name="minbtn" tooltip="最小化" float="true" pos="3,7,0,0" width="36" height="24" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage=" file=&apos;../Resource/icon_min.png&apos; source=&apos;0,0,36,24&apos;" hotimage=" file=&apos;../Resource/icon_min.png&apos; source=&apos;36,0,72,24&apos;" pushedimage=" file=&apos;../Resource/icon_min.png&apos; source=&apos;72,0,108,24&apos;" />
+                    <Button name="closebtn" tooltip="关闭" float="true" pos="42,7,0,0" width="36" height="24" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage=" file=&apos;../Resource/icon_close.png&apos; source=&apos;0,0,36,24&apos;" hotimage=" file=&apos;../Resource/icon_close.png&apos; source=&apos;36,0,72,24&apos;" pushedimage=" file=&apos;../Resource/icon_close.png&apos; source=&apos;72,0,108,24&apos;" />
+                </VerticalLayout>
+            </HorizontalLayout>
+            <HorizontalLayout>
+                <TabLayout name="switch">
+                    <HorizontalLayout name="layoutHome">
+                        <OperatorHome />
+                    </HorizontalLayout>
+                    <HorizontalLayout name="layoutCharge">
+                        <OperatorCharge />
+                    </HorizontalLayout>
+                    <HorizontalLayout name="layoutUserMgr">
+                        <OperatorUserMgr />
+                    </HorizontalLayout>
+					<HorizontalLayout name="layoutAdmin">
+                        <OperatorAdmin />
+                    </HorizontalLayout>
+                </TabLayout>
+            </HorizontalLayout>
+        </VerticalLayout>
+    </HorizontalLayout>
+</Window>

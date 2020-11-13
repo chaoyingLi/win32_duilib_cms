@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window >
+	<ListContainerElement height="68">
+		<VLayoutHover height="68" bkcolor="#ffffffff">
+			<FIcon name="file_icon" float="true" pos="20,16,56,52"/>
+			<Label name="lb_item" float="true" pos="74,16,500,36" font="140" textcolor="#ff767676" align="left" valign="center" endellipsis="true"/>
+			<Label name="lb_detail" float="true" pos="74,36,500,52" font="120" textcolor="#ff767676" align="left" valign="center" endellipsis="true"/>
+			<Button name="btn_hand_optimize" float="true" pos="520,0,570,68" align="left" valign="center" textcolor="#ffffa924" hottextcolor="#ffff9600" pushedtextcolor="#fff17f05" text="立即优化" bkcolor="#00FFFFFF" font="120"/>
+			<Button name="btn_neglect" visible="false" float="true" pos="600,0,648,68" textcolor="#ff00a3f2" hottextcolor="#ff4285f4" pushedtextcolor="#ff0956b5" text="忽略" bkcolor="#00FFFFFF" font="120"/>
+			<Label float="true" pos="0,67,680,68" bkcolor="#ffededed"/>
+		</VLayoutHover>
+	</ListContainerElement>
+</Window>

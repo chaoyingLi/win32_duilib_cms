@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="458,222">
+	<Fonts xmlfile="shared_fonts.xml" shared="true"/>
+	<VerticalLayout bkcolor="#FFFFFFFF">
+		<HorizontalLayout height="46" inset="0,15,18,0">
+			<Label float="true" pos="19,17,43,41" bkimage="icon_setting_logo.png"/>
+			<Label text="启动优化-设置" float="true" pos="51,17,250,41" font="180" align="left" valign="center" textcolor="#FF8b7f68"/>
+			<Button name="btn_close" float="true" pos="408,17,444,41" tooltip="关闭"
+				normalimage="file='icon_close.png' source='0,0,36,24'" 
+				hotimage="file='icon_close.png' source='36,0,72,24'" 
+				pushedimage="file='icon_close.png' source='72,0,108,24'"/>
+		</HorizontalLayout>
+		<HorizontalLayout height="124">
+			<Control bkimage="icon_set.png" float="true" pos="40,20,120,100"/>
+			<VerticalLayout inset="26,46,0,0" >
+				<Label float="true" pos="146,40,320,56" textpadding="29,0,0,0"
+					text="自动扫描可优化项目" font="160" valign="center" align="left" textcolor="#FF595959"/>
+				<Option name="opt_auto_scan" float="true" pos="146,40,320,56"
+					normalimage="file='btn_checkbox.png' source='0,0,16,16' dest='0,0,16,16'"
+					hotimage="file='btn_checkbox.png' source='16,0,32,16' dest='0,0,16,16'"
+					selectedimage="file='btn_checkbox.png' source='32,0,48,16' dest='0,0,16,16'"/>
+				<Label float="true" pos="175,66,400,80" valign="center" align="left" text="当发现可优化项目时，弹窗提醒我" font="120" textcolor="#FF787878"/>
+			</VerticalLayout>
+		</HorizontalLayout>
+		<HorizontalLayout height="51" inset="0,12,24,0">
+			<Label float="true" pos="24,0,434,1" bkcolor="#ffe6e6e6"/>
+			<Control width="275"/>
+			<Button name="btn_ok" width="70" height="27" textcolor="#ffffffff"
+				normalimage="file='icon_btn.png' source='0,0,26,26' corner='3,3,3,3'"
+				hotimage="file='icon_btn.png' source='26,0,52,26' corner='3,3,3,3'"
+				pushedimage="file='icon_btn.png' source='52,0,78,26' corner='3,3,3,3'"
+				text="确定"/>
+			<Control width="15"/>
+			<Button name="btn_cancel" width="70" height="27" textcolor="#FF646464"
+				normalimage="file='btn_orange_24.png' source='0,0,35,24' corner='3,3,3,3'"
+				hotimage="file='btn_orange_24.png' source='35,0,70,24' corner='3,3,3,3'"
+				pushedimage="file='btn_orange_24.png' source='70,0,105,24' corner='3,3,3,3'"
+				text="取消"/>
+		</HorizontalLayout>
+	</VerticalLayout>
+</Window>

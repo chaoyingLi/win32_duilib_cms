@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<ComboEx name="combo_item_treatment" float="true" pos="627,20,701,40" style="comboex_origin" dropbox="vscrollbar=&quot;false&quot; bordersize=&quot;0&quot;">
+		<ListLabelElement text="允许启动"/>
+		<ListLabelElement text="禁止启动"/>
+	</ComboEx>
+</Window>

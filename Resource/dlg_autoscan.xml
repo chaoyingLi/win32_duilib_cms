@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="420,188" caption="0,0,420,140" mininfo="420,188" maxinfo="420,188" roundcorner="1,1">
+	<Fonts xmlfile="shared_fonts.xml" shared="true"/>
+	<VerticalLayout bkcolor="#FFFFFFFF">
+		<HorizontalLayout height="30">
+			<Label name="label_title" float="true" pos="14,12,200,30" text="火绒安全-启动项管理" font="140" textcolor="#ff424242"/>
+			<Button name="btn_close" float="true" pos="374,6,410,30" tooltip="关闭"
+				normalimage="file='icon_close.png' source='0,0,36,24'"
+				hotimage="file='icon_close.png' source='36,0,72,24'"
+				pushedimage="file='icon_close.png' source='72,0,108,24'"/>
+		</HorizontalLayout>
+		<HorizontalLayout height="158">
+			<Label float="true" pos="33,20,165,128" bkimage="icon_auto_logo.png"/>
+			<VerticalLayout name="vlayout_scaned">
+				<Label name="lb_result_scaned" float="true" pos="170,32,410,52" align="left"
+					 font="180" textcolor="#ff424242" userdata="发现num项可优化的启动项" text="发现0项可优化的启动项"/>
+				<Label float="true" pos="170,59,410,75"  align="left" font="140"
+					text="优化后可提升开机速度！" textcolor="#ff424242"/>
+				<Button name="btn_detail" float="true" pos="305,110,395,146" font="140"
+					text="查看详情" textcolor="#FFFFFFFF"
+					normalimage="file='icon_btn.png' source='0,0,26,26' corner='2,2,2,4'"
+					hotimage="file='icon_btn.png' source='26,0,52,26' corner='2,2,2,4'"
+					pushedimage="file='icon_btn.png' source='52,0,78,26' corner='2,2,2,4'"/>
+			</VerticalLayout>
+		</HorizontalLayout>
+		<Label float="true" pos="40,160,225,178" align="left" font="140"
+			text="不再自动检测" textcolor="#ff424242" />
+		<Option name="opt_no_auto_scan" float="true" pos="13,160,130,178" selected="true"
+			normalimage="file='btn_checkbox.png' source='0,0,16,16' dest='0,0,16,16'"
+			hotimage="file='btn_checkbox.png' source='16,0,32,16' dest='0,0,16,16'"
+			selectedimage="file='btn_checkbox.png' source='32,0,48,16' dest='0,0,16,16'"/>
+	</VerticalLayout>
+</Window>

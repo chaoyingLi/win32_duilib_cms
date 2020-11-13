@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="400,300">
+    <Font id="0" name="微软雅黑" size="16" bold="false" italic="false" />
+    <Font id="1" name="微软雅黑" size="20" bold="false" italic="false" />
+    <VerticalLayout bordersize="1" width="400" height="300" bkcolor="#FFFFFFFF" bordercolor="#00FFA924">
+        <HorizontalLayout height="40">
+            <VerticalLayout width="323" height="40">
+                <Label text="缴费成功" float="true" pos="19,8,0,0" width="200" height="26" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="1" />
+            </VerticalLayout>
+            <VerticalLayout>
+                <Button name="closebtn" float="true" pos="40,5,0,0" width="36" height="24" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage=" file=&apos;../Resource/icon_close.png&apos; source=&apos;0,0,36,24&apos;" hotimage=" file=&apos;../Resource/icon_close.png&apos; source=&apos;36,0,72,24&apos;" pushedimage=" file=&apos;../Resource/icon_close.png&apos; source=&apos;72,0,108,24&apos;" />
+            </VerticalLayout>
+        </HorizontalLayout>
+        <HorizontalLayout>
+            <Label text="用户" float="true" pos="95,54,0,0" width="43" height="30" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="0" />
+            <Label name="labelMSISDN_NAME" text="13800138000 （章远）" float="true" pos="145,54,0,0" width="179" height="30" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="0" />
+            <Label text="缴费" float="true" pos="96,115,0,0" width="37" height="30" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="0" />
+            <Button name="btnOK" text="确定" float="true" pos="105,202,0,0" width="85" height="30" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" font="0" align="center" normalimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;0,0,26,26&apos; corner=&apos;10,10,10,10&apos;" hotimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;26,0,52,26&apos; corner=&apos;10,10,10,10&apos;" pushedimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;52,0,78,26&apos; corner=&apos;10,10,10,10&apos;" />
+            <Button name="btnPrint" text="打印发票" float="true" pos="210,202,0,0" width="85" height="30" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" font="0" align="center" normalimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;0,0,26,26&apos; corner=&apos;10,10,10,10&apos;" hotimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;26,0,52,26&apos; corner=&apos;10,10,10,10&apos;" pushedimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;52,0,78,26&apos; corner=&apos;10,10,10,10&apos;" />
+            <Label name="labelAmount" text="1314.52" float="true" pos="146,115,0,0" width="63" height="30" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="0" />
+            <Label text="元：成功" float="true" pos="221,115,0,0" width="77" height="30" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="0" />
+        </HorizontalLayout>
+    </VerticalLayout>
+</Window>

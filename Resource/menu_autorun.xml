@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="102,102" layeredimage="file='bk_menu.png' corner='4,3,4,6'">
+	<Fonts xmlfile="shared_fonts.xml" shared="true"/>
+	<Style name="s_menu_item" value="group=&quot;menu_group&quot; textcolor=&quot;#ff595959&quot; hottextcolor=&quot;#fff37e00&quot; selectedtextcolor=&quot;#fff37e00&quot; textpadding=&quot;38,0,0,0&quot; font=&quot;0&quot; align=&quot;left&quot;"/>
+	<HorizontalLayout inset="4,7,4,11">
+		<List name="list_menu" header="false" bkcolor="#ffffffff" itemfont="120" itemalign="center"
+			itemtextpadding="0,0,0,0" itemendellipsis="true"
+			itemtextcolor="#ff595959" itemhottextcolor="#fff37e00" itemselectedtextcolor="#fff37e00"
+			itemhotbkcolor="#ffefefef" itemselectedbkcolor="#ffefefef" >
+			<ListLabelElement height="30" font="120" 
+				text="忽略此项"/>
+			<ListLabelElement height="30" font="120" 
+				text="删除此项"/>
+			<ListLabelElement height="30" font="120" 
+				text="打开所在目录"/>
+		</List>
+	</HorizontalLayout>
+</Window>

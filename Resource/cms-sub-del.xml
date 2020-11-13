@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="800,515">
+    <Font id="0" name="微软雅黑" size="29" bold="false" italic="false" />
+    <Font id="1" name="微软雅黑" size="21" bold="false" italic="false" />
+    <VerticalLayout width="800" height="515" bkcolor="#FFFFFFFF">
+        <HorizontalLayout height="60">
+            <VerticalLayout width="720" height="60">
+                <Label text="收费管理系统-销户" float="true" pos="28,15,0,0" width="269" height="40" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="0" />
+            </VerticalLayout>
+            <VerticalLayout>
+                <Button name="closebtn" tooltip="关闭" float="true" pos="42,7,0,0" width="36" height="24" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage=" file=&apos;../Resource/icon_close.png&apos; source=&apos;0,0,36,24&apos;" hotimage=" file=&apos;../Resource/icon_close.png&apos; source=&apos;36,0,72,24&apos;" pushedimage=" file=&apos;../Resource/icon_close.png&apos; source=&apos;72,0,108,24&apos;" />
+            </VerticalLayout>
+        </HorizontalLayout>
+        <HorizontalLayout>
+            <Label text="用户号码：" float="true" pos="146,109,0,0" width="115" height="30" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="1" />
+            <Edit name="editMSISDN" bordersize="1" float="true" pos="269,105,0,0" width="215" height="40" bkcolor="#FFFFFFFF" bordercolor="#00FFA924" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="1" />
+            <Button name="btnQuery" text="查询" float="true" pos="546,105,0,0" width="80" height="40" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" font="1" align="center" normalimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;0,0,26,26&apos; corner=&apos;10,10,10,10&apos;" hotimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;26,0,52,26&apos; corner=&apos;10,10,10,10&apos;" pushedimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;52,0,78,26&apos; corner=&apos;10,10,10,10&apos;" />
+            <Label text="姓名：" float="true" pos="85,189,0,0" width="60" height="30" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="1" />
+            <Label name="textName" float="true" pos="157,184,0,0" width="100" height="40" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="1" />
+            <Label text="余额：" float="true" pos="299,188,0,0" width="60" height="30" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="1" />
+            <Label name="textBalance" float="true" pos="373,183,0,0" width="60" height="40" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="1" />
+            <Label text="元" float="true" pos="462,188,0,0" width="60" height="30" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="1" />
+            <Label text="状态：" float="true" pos="535,188,0,0" width="60" height="30" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="1" />
+            <Label name="textStatus" float="true" pos="609,186,0,0" width="60" height="40" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="1" />
+            <Label text="当前套餐：" float="true" pos="87,274,0,0" width="114" height="40" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="1" />
+            <Label name="textPlan" float="true" pos="210,272,0,0" width="471" height="78" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="1" />
+            <Button text="销户" float="true" pos="360,392,0,0" width="80" height="40" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" font="1" align="center" normalimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;0,0,26,26&apos; corner=&apos;10,10,10,10&apos;" hotimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;26,0,52,26&apos; corner=&apos;10,10,10,10&apos;" pushedimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;52,0,78,26&apos; corner=&apos;10,10,10,10&apos;" />
+        </HorizontalLayout>
+    </VerticalLayout>
+</Window>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="720,485" mininfo="720,485" maxinfo="720,485" roundcorner="2,2">
+	<Fonts xmlfile="shared_fonts.xml" shared="true"/>
+	<Styles xmlfile="shared_styles.xml" shared="true"/>
+	<Include source="shared_scrollbar.xml" />
+	
+	<VerticalLayout bkcolor="#FFFFFFFF" height="485">
+		<VerticalLayout name="hlayout_top" height="79">
+			<HorizontalLayout height="49">
+				<Label name="label_title" float="true" pos="20,0,250,42" valign="center" text="火绒启动优化-操作记录" textcolor="#ff424242"/>
+				<Button name="btn_close" float="true" pos="666,15,702,39" tooltip="关闭"
+					normalimage="file='icon_close.png' source='0,0,36,24'"
+					hotimage="file='icon_close.png' source='36,0,72,24'"
+					pushedimage="file='icon_close.png' source='72,0,108,24'"/>
+			</HorizontalLayout>
+			<HorizontalLayout height="30">
+				<Container width="40"/>
+				<Label name="lb_warning" font="140" textcolor="#ff424242" text="当前记录了1个操作行为。" userdata="当前记录了num个操作行为。"/>
+				<Container width="5"/>
+				<Button name="btn_restore_all" align="left" bkcolor="#00FFFFFF" textcolor="#ffff9d06" 
+					hottextcolor="#ffffb440" pushedtextcolor="#ffe38b04" text="全部恢复至原始状态"/>
+				<Container />
+			</HorizontalLayout>
+		</VerticalLayout>
+		<VerticalLayout name="vlayout_mid" height="373">
+			<VerticalLayout name="vlayout_empty" visible="false" float="true" pos="0,33,720,373">
+				<Label float="true" pos="310,83,410,183" bkimage="icon_empty.png"/>
+				<Label float="true" pos="0,203,720,230"  valign="top" align="center" font="140" text="当前没有记录的已操作启动项" textcolor="#ff767676"/>
+			</VerticalLayout>
+			<List name="list_items" keyboard="true" itemselectedbkcolor="#00000000" itemhotbkcolor="#00000000"
+					vscrollbar="true" containeritemxml="history_item.xml">
+				<ListHeader height="33" style="header_bk" >
+					<!--<Label float="true" pos="0,0,720,1" bkcolor="#ffededed"/>-->
+					<ListHeaderItem  width="20" style="header_bk" />			
+					<ListHeaderItem text="启动项名称" width="298" align="left" textpadding="20,0,0,0" font="140" textcolor="#ff767676" style="header_sort" />
+					<ListHeaderItem text="原始状态" width="90" align="left" textpadding="10,0,0,0" font="140" textcolor="#ff767676" style="header_sort" />
+					<ListHeaderItem text="操作时间" width="90" align="left" textpadding="10,0,0,0" font="140" textcolor="#ff767676" style="header_sort" />
+					<ListHeaderItem text="操作结果" width="90" align="left" textpadding="10,0,0,0" font="140" textcolor="#ff767676" style="header_sort" />
+					<ListHeaderItem width="112" style="header_bk"/>
+					<!--<Label float="true" pos="0,32,720,33" bkcolor="#ffededed"/>-->
+				</ListHeader>
+			</List>		
+		</VerticalLayout>
+		<VerticalLayout name="vlayout_bottom" >
+			<Label float="true" pos="0,0,720,1" bkcolor="#ffededed"/>
+			<HorizontalLayout>
+				<Container />
+				<Button name="btn_clearDel" text="清除已删除项" style="btn_neg" />
+				<Container width="40"/>
+			</HorizontalLayout>
+		</VerticalLayout>
+    </VerticalLayout>
+</Window>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Fonts>
+	<Font shared="true" id="100" name="微软雅黑" size="10"/>
+    <Font shared="true" id="120" name="微软雅黑" size="12"/>
+	<Font shared="true" id="140" name="微软雅黑" size="14" default="true"/>
+    <Font shared="true" id="160" name="微软雅黑" size="16"/>
+	<Font shared="true" id="180" name="微软雅黑" size="18"/>
+    <Font shared="true" id="200" name="微软雅黑" size="20"/>
+	<Font shared="true" id="220" name="微软雅黑" size="22"/>
+	<Font shared="true" id="240" name="微软雅黑" size="24"/>
+    <Font shared="true" id="260" name="微软雅黑" size="26"/>
+</Fonts>

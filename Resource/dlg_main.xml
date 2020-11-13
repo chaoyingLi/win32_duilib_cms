@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window size="800,515" caption="0,0,800,128" mininfo="800,515" maxinfo="800,515" roundcorner="2,2">
+	<Fonts xmlfile="shared_fonts.xml" shared="true"/>
+	<Styles xmlfile="shared_styles.xml" shared="true"/>
+	<Include source="shared_scrollbar.xml" />
+
+    <VerticalLayout bkcolor="#FFFFFFFF">
+		<HorizontalLayout name="hlayout_top" height="128">
+			<Label name="label_title" float="true" pos="19,15,150,34" text="火绒安全-启动优化" textcolor="#ff424242"/>
+			<Button name="btn_setting" float="true" pos="674,15,710,39" tooltip="设置"
+				normalimage="file='icon_setting.png' source='0,0,36,24'"
+				hotimage="file='icon_setting.png' source='36,0,72,24'"
+				pushedimage="file='icon_setting.png' source='72,0,108,24'"/>
+			<Button name="btn_min" float="true" pos="710,15,746,39" tooltip="最小化"
+				normalimage="file='icon_min.png' source='0,0,36,24'"
+				hotimage="file='icon_min.png' source='36,0,72,24'"
+				pushedimage="file='icon_min.png' source='72,0,108,24'"/>
+			<Button name="btn_close" float="true" pos="746,15,782,39" tooltip="关闭"
+				normalimage="file='icon_close.png' source='0,0,36,24'"
+				hotimage="file='icon_close.png' source='36,0,72,24'"
+				pushedimage="file='icon_close.png' source='72,0,108,24'"/>
+			<Label name="lb_logo_computer" float="true" pos="48,57,118,115" bkimage="icon_logo_computer.png"/>
+			<Label name="lb_scaning" float="true" pos="48,57,118,115" bkimage="file='icon_scaning.png' source='0,0,70,58' dest='0,0,70,58'" userdata="num=14 size=70,58"/>
+			<TabLayout name="tlayout_summary" float="true" pos="150,53,800,109" selectedid="0">
+				<HorizontalLayout name="hlayout_scaning">
+					<Label name="lb_summary" float="true" pos="0,0,300,40" valign="center" align="left" font="260" 
+							textcolor="#ff424242" text="正在扫描可优化启动项目"/>
+					<Label name="lb_detail" float="true" pos="0,40,300,58" valign="center" align="left" font="140" textcolor="#ff767676" text="一键优化可禁用项目，提高开机速度。"/>
+					<Button name="btn_scan" float="true" pos="483,6,605,46" font="160" valign="center" align="center" enabled="false"
+						textcolor="#ff767676" text="正在扫描" bkimage="file='icon_btn.png' source='78,0,104,26' corner='10,10,10,10'"/>
+				</HorizontalLayout>
+				<HorizontalLayout name="hlayout_scaned">
+					<Label name="lb_scaned_summary" float="true" pos="0,0,300,40" valign="center" align="left" font="260" 
+							textcolor="#ff424242" showhtml="true" text="发现 {c #f26223}size{/c} 项可优化启动项目" userdata="发现 {c #f26223}size{/c} 项可优化启动项目"/>
+					<Label name="lb_detail" float="true" pos="0,40,300,58" valign="center" align="left" font="140" textcolor="#ff767676" text="一键优化可禁用项目，提高开机速度。"/>
+					<Button name="btn_detail" float="true" pos="483,6,605,46" font="160" valign="center" align="center" textcolor="#ffffffff" text="查看详情"
+						normalimage="file='icon_btn.png' source='0,0,26,26' corner='10,10,10,10'"
+						hotimage="file='icon_btn.png' source='26,0,52,26' corner='10,10,10,10'"
+						pushedimage="file='icon_btn.png' source='52,0,78,26' corner='10,10,10,10'"/>
+				</HorizontalLayout>
+				<HorizontalLayout name="hlayout_optimized">
+					<Label name="lb_summary" float="true" pos="0,0,300,40" valign="center" align="left" font="260" 
+							textcolor="#ff424242" showhtml="true" text="未发现可优化启动项目"/>
+					<Label name="lb_detail" float="true" pos="0,40,300,58" valign="center" align="left" font="140" textcolor="#ff767676" text="手动管理启动项目，提高开机速度。"/>
+					<Button name="btn_rescan" float="true" pos="483,6,605,46" font="160" valign="center" align="center" textcolor="#ffffffff" text="重新扫描"
+						normalimage="file='icon_btn.png' source='0,0,26,26' corner='10,10,10,10'"
+						hotimage="file='icon_btn.png' source='26,0,52,26' corner='10,10,10,10'"
+						pushedimage="file='icon_btn.png' source='52,0,78,26' corner='10,10,10,10'"/>
+				</HorizontalLayout>
+			</TabLayout>
+		</HorizontalLayout>
+		<VerticalLayout name="vlayout_mid" height="345">
+			<VerticalLayout name="vlayout_category" height="40" bkcolor="#fff4f4f4">
+				<Label height="1" width="800" bkcolor="#ffededed"/>
+				<Label float="true" pos="0,39,800,40" bkcolor="#ffededed"/>
+				<Option name="opt_startup" group="category_group" style="opt_category" float="true" pos="19,0,139,40" text="启动项" selected="true"/>
+				<Option name="opt_services" group="category_group" style="opt_category" float="true" pos="139,0,259,40" text="服务项"/>
+				<Option name="opt_task" group="category_group" style="opt_category" float="true" pos="258,0,379,40" text="任务计划"/>
+			</VerticalLayout>
+			<TabLayout name="tlayout_lists" height="304" selectedid="0">
+				<Label name="icon_scaning_computer" float="true" pos="257,49,543,256" bkimage="icon_scaning_computer.png"/>
+				<TabLayout name="tlayout_startup">
+					<List name="list_startup"  style="list_category" containeritemxml="scaned_result_item.xml"/>
+					<VerticalLayout>
+						<Label float="true" pos="350,83,450,183" bkimage="icon_empty.png"/>
+						<Label float="true" pos="0,203,800,230" align="center" valign="top" font="140" textcolor="#ff767676" text="当前未发现启动项"/>
+					</VerticalLayout>
+				</TabLayout>
+				<TabLayout>
+					<List name="list_services"  style="list_category" containeritemxml="scaned_result_item.xml"/>
+					<VerticalLayout>
+						<Label float="true" pos="350,83,450,183" bkimage="icon_empty.png"/>
+						<Label float="true" pos="0,203,800,230" align="center" valign="top" font="140" textcolor="#ff767676" text="当前未发现服务项"/>
+					</VerticalLayout>
+				</TabLayout>
+				<TabLayout>
+					<List name="list_task"  style="list_category" containeritemxml="scaned_result_item.xml"/>
+					<VerticalLayout>
+						<Label float="true" pos="350,83,450,183" bkimage="icon_empty.png"/>
+						<Label float="true" pos="0,203,800,230" align="center" valign="top" font="140" textcolor="#ff767676" text="当前未发现任务计划"/>
+					</VerticalLayout>
+				</TabLayout>
+			</TabLayout>
+			<Label height="1" bkcolor="#ffededed"/>
+		</VerticalLayout>
+		<HorizontalLayout name="hlayout_bottom" height="42">
+			<Label float="true" pos="56,11,200,27" align="left" valign="center" text="隐藏已禁用的启动项" font="120" textcolor="#ff767676"/>
+			<Option name="opt_hide"  float="true" pos="29,11,170,27" style="opt_hide"/>
+			<Button name="btn_history" float="true" pos="580,11,680,27" style="btn_neg" text="操作记录（0）" userdata="操作记录（num）"/>
+			<Button name="btn_neglect" float="true" pos="690,11,790,27" style="btn_neg" text="忽略项目（0）" userdata="忽略项目（num）"/>
+		</HorizontalLayout>
+    </VerticalLayout>
+</Window>

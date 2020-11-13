@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<ListContainerElement height="61" inset="0,0,5,0">
+		<VLayoutHover height="61" bkcolor="#ffffffff">
+			<FIcon name="file_icon" float="true" pos="21,10,61,50"/>
+			<Label name="lb_item" float="true" pos="84,10,484,34" font="140" textcolor="#ff767676" align="left" valign="center" endellipsis="true"/>
+			<Label name="lb_detail" float="true" pos="84,34,484,50" font="120" textcolor="#ff767676" align="left" valign="center" endellipsis="true"/>
+			<Label name="lb_suggest" float="true" pos="542,0,594,60" font="120" textcolor="#ff767676" align="center" valign="center"/>
+			<ComboEx name="combo_item_treatment" float="true" pos="617,17,711,43" style="comboex_origin" font="120" textcolor="#ff767676" itemshowhtml="true" dropbox="vscrollbar=&quot;false&quot; bordersize=&quot;1&quot;">
+				<ListLabelElement text="{v center}{i icon_combo_pass.png}{/v} 允许启动"/>
+				<ListLabelElement text="{v center}{i icon_combo_block.png}{/v} 禁止启动"/>
+			</ComboEx>
+			<Button name="btn_operate" visible="false" float="true" pos="723,22,739,38" tooltip="手动处理" style="btn_operate"/>
+			<Label float="true" pos="0,60,800,61" bkcolor="#ffededed"/>
+		</VLayoutHover>
+	</ListContainerElement>
+</Window>

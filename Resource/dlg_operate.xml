@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="128,92" mininfo="128,92" maxinfo="128,92" roundcorner="1,1">
+	<Fonts xmlfile="shared_fonts.xml" shared="true"/>
+	<Styles xmlfile="shared_styles.xml" shared="true"/>
+	
+	<VerticalLayout  bkcolor="#FFFFFFFF">
+		<Button name="btn_neglect" style="btn_operate_menu" height="30" text="忽略此项"/>
+		<Label height="1"/>
+		<Button name="btn_delete" style="btn_operate_menu" height="30" text="删除此项"/>
+		<Label height="1"/>
+		<Button name="btn_browser" style="btn_operate_menu" height="30" text="打开所在目录"/>
+	</VerticalLayout>
+</Window>

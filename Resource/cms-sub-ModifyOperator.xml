@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="400,300">
+    <Font name="微软雅黑" size="14" bold="false" italic="false" />
+    <Font name="微软雅黑" size="20" bold="false" italic="false" />
+    <VerticalLayout bordersize="1" width="400" height="300" bkcolor="#FFFFFFFF" bordercolor="#00FFA924">
+        <HorizontalLayout height="40">
+            <VerticalLayout width="323" height="40">
+                <Label text="修改收费员信息" float="true" pos="19,8,0,0" width="200" height="26" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="1" />
+            </VerticalLayout>
+            <VerticalLayout>
+                <Button name="closebtn" float="true" pos="40,5,0,0" width="36" height="24" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage=" file=&apos;../Resource/icon_close.png&apos; source=&apos;0,0,36,24&apos;" hotimage=" file=&apos;../Resource/icon_close.png&apos; source=&apos;36,0,72,24&apos;" pushedimage=" file=&apos;../Resource/icon_close.png&apos; source=&apos;72,0,108,24&apos;" />
+            </VerticalLayout>
+        </HorizontalLayout>
+        <HorizontalLayout>
+            <Label text="工号：" float="true" pos="39,35,0,0" width="60" height="30" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="0" />
+            <Label text="姓名：" float="true" pos="181,35,0,0" width="52" height="30" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="0" />
+            <Label text="性别：" float="true" pos="39,88,0,0" width="51" height="30" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="0" />
+            <Edit name="editName" bordersize="1" float="true" pos="240,35,0,0" width="133" height="30" bkcolor="#FFFFFFFF" bordercolor="#00FFA924" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="0" />
+            <Edit name="editGender" tooltip="请输入新密码" bordersize="1" float="true" pos="104,88,0,0" width="49" height="30" bkcolor="#FFFFFFFF" bordercolor="#00FFA924" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="0" />
+            <Edit name="editPwd" tooltip="请再输入一次新密码" bordersize="1" float="true" pos="104,141,0,0" width="133" height="30" bkcolor="#FFFFFFFF" bordercolor="#00FFA924" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="0" password="true" />
+            <Button name="btnModify" text="修改" float="true" pos="105,195,0,0" width="60" height="30" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" font="0" align="center" normalimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;0,0,26,26&apos; corner=&apos;10,10,10,10&apos;" hotimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;26,0,52,26&apos; corner=&apos;10,10,10,10&apos;" pushedimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;52,0,78,26&apos; corner=&apos;10,10,10,10&apos;" />
+            <Button name="btnReset" text="重置" float="true" pos="236,195,0,0" width="60" height="30" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" font="0" align="center" normalimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;0,0,26,26&apos; corner=&apos;10,10,10,10&apos;" hotimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;26,0,52,26&apos; corner=&apos;10,10,10,10&apos;" pushedimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;52,0,78,26&apos; corner=&apos;10,10,10,10&apos;" />
+            <Label text="等级：" float="true" pos="182,88,0,0" width="52" height="30" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="0" />
+            <Combo name="comboClass" text="收费员" bordersize="1" bordercolor="#00FFA924" float="true" pos="240,88,0,0" width="60" height="30" itemtextcolor="#FF000000" itemselectedtextcolor="#FF000000" itemselectedbkcolor="#FFC1E3FF" itemhottextcolor="#FF000000" itemhotbkcolor="#FFE9F5FF" itemdisabledtextcolor="#FFCCCCCC" itemdisabledbkcolor="#FFFFFFFF" dropboxsize="0,150" >
+				<ListLabelElement text="收费员" font="1" />
+				<ListLabelElement text="管理员" font="1" />
+			</Combo>
+            <Label text="密码：" float="true" pos="39,141,0,0" width="52" height="30" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="0" />
+            <Label name="labelOperatorNo" float="true" pos="104,35,0,0" width="52" height="30" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="0" />
+        </HorizontalLayout>
+    </VerticalLayout>
+</Window>

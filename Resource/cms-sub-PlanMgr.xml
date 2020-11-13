@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="600,450">
+    <Font id="0" name="微软雅黑" size="15" bold="false" italic="false" />
+    <Font id="1" name="微软雅黑" size="21" bold="false" italic="false" />
+    <VerticalLayout width="600" height="450" bkcolor="#FFFFFFFF">
+		<Control name="ctrlGrayPlanMgr" visible="false" float="true" pos="0,0,0,0" width="600" height="450" bkcolor="#FF4F4D4D" />
+        <HorizontalLayout height="50">
+            <VerticalLayout width="530">
+                <Label text="套餐管理" float="true" pos="23,13,0,0" width="112" height="30" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="1" />
+            </VerticalLayout>
+            <VerticalLayout>
+                <Button name="closebtn" float="true" pos="26,12,0,0" width="34" height="23" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="0" align="center" normalimage=" file=&apos;../Resource/icon_close.png&apos; source=&apos;0,0,36,24&apos;" hotimage=" file=&apos;../Resource/icon_close.png&apos; source=&apos;36,0,72,24&apos;" pushedimage=" file=&apos;../Resource/icon_close.png&apos; source=&apos;72,0,108,24&apos;" />
+            </VerticalLayout>
+        </HorizontalLayout>
+        <HorizontalLayout>
+            <VerticalLayout>
+                <HorizontalLayout height="50">
+                    <Option name="optNew" text="新增" float="true" pos="37,15,0,0" width="60" height="30" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" font="0" align="center" normalimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;0,0,26,26&apos; corner=&apos;10,10,10,10&apos;" hotimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;26,0,52,26&apos; corner=&apos;10,10,10,10&apos;" pushedimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;52,0,78,26&apos; corner=&apos;10,10,10,10&apos;" group="opts" selected="true" selectedimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;52,0,78,26&apos; corner=&apos;10,10,10,10&apos;" />
+                    <Option name="optQMD" text="查询/修改/删除" float="true" pos="119,14,0,0" width="130" height="30" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" font="0" align="center" normalimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;0,0,26,26&apos; corner=&apos;10,10,10,10&apos;" hotimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;26,0,52,26&apos; corner=&apos;10,10,10,10&apos;" pushedimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;52,0,78,26&apos; corner=&apos;10,10,10,10&apos;" group="opts" selectedimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;52,0,78,26&apos; corner=&apos;10,10,10,10&apos;" />
+                </HorizontalLayout>
+                <HorizontalLayout>
+                    <TabLayout name="switch">
+                        <HorizontalLayout name="layoutNew">
+                            <PlanMgrNew />
+                        </HorizontalLayout>
+                        <HorizontalLayout name="layoutQMD">
+                            <PlanMgrQMD />
+                        </HorizontalLayout>
+                    </TabLayout>
+                </HorizontalLayout>
+            </VerticalLayout>
+        </HorizontalLayout>
+    </VerticalLayout>
+</Window>

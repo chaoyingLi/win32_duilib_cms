@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="400,300" caption="0,0,0,128" mininfo="400,300">
+    <Font id="0" name="微软雅黑" size="14" bold="false" italic="false" />
+    <Font id="1" name="微软雅黑" size="20" bold="false" italic="false" />
+    <VerticalLayout bordersize="1" bkcolor="#FFFFFFFF" bordercolor="#00FFA924">
+        <HorizontalLayout height="40">
+            <VerticalLayout height="40" />
+            <Label name="label_title" text="收费管理系统-登录" float="true" pos="19,8,0,0" width="200" height="26" textcolor="#FF424242" disabledtextcolor="#FFA7A6AA" font="1" />
+            <VerticalLayout width="77">
+                <Button name="minbtn" tooltip="最小化" float="true" pos="2,5,0,0" width="36" height="24" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage=" file=&apos;../Resource/icon_min.png&apos; source=&apos;0,0,36,24&apos;" hotimage=" file=&apos;../Resource/icon_min.png&apos; source=&apos;36,0,72,24&apos;" pushedimage=" file=&apos;../Resource/icon_min.png&apos; source=&apos;72,0,108,24&apos;" />
+                <Button name="closebtn" tooltip="关闭" float="true" pos="40,5,0,0" width="36" height="24" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage=" file=&apos;../Resource/icon_close.png&apos; source=&apos;0,0,36,24&apos;" hotimage=" file=&apos;../Resource/icon_close.png&apos; source=&apos;36,0,72,24&apos;" pushedimage=" file=&apos;../Resource/icon_close.png&apos; source=&apos;72,0,108,24&apos;" />
+            </VerticalLayout>
+        </HorizontalLayout>
+        <HorizontalLayout>
+            <VerticalLayout width="171" height="210">
+                <Label text="工号：" float="true" pos="98,64,0,0" width="60" height="30" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="0" align="center" />
+                <Label text="密码：" float="true" pos="98,122,0,0" width="60" height="30" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="0" align="center" />
+            </VerticalLayout>
+            <VerticalLayout width="224" height="210">
+                <Edit name="editNo" tooltip="请填写工号" bordersize="1" float="true" pos="18,65,0,0" width="133" height="30" bkcolor="#FFFFFFFF" bkcolor2="#00FFFFFF" bordercolor="#00FFA924" textpadding="2,0,2,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="0" />
+                <Edit name="editPwd" tooltip="请填写密码" bordersize="1" float="true" pos="18,124,0,0" width="133" height="30" bkcolor="#FFFFFFFF" bordercolor="#00FFA924" textpadding="2,0,2,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="0" password="true" />
+            </VerticalLayout>
+            <Button name="btnLogin" text="登录" float="true" pos="116,219,0,0" width="60" height="30" bkcolor="#FFFFFFFF" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" font="0" align="center" normalimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;0,0,26,26&apos; corner=&apos;10,10,10,10&apos;" hotimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;26,0,52,26&apos; corner=&apos;10,10,10,10&apos;" pushedimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;52,0,78,26&apos; corner=&apos;10,10,10,10&apos;" />
+            <Button name="btnReset" text="重置" float="true" pos="224,219,0,0" width="60" height="30" bkcolor="#FFFFFFFF" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" font="0" align="center" normalimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;0,0,26,26&apos; corner=&apos;10,10,10,10&apos;" hotimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;26,0,52,26&apos; corner=&apos;10,10,10,10&apos;" pushedimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;52,0,78,26&apos; corner=&apos;10,10,10,10&apos;" />
+        </HorizontalLayout>
+    </VerticalLayout>
+</Window>

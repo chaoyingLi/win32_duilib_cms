@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="670,465">
+    <Font id="0" name="微软雅黑" size="37" bold="false" italic="false" />
+    <Font id="1" name="微软雅黑" size="20" bold="false" italic="false" />
+    <Font id="2" name="微软雅黑" size="14" bold="false" italic="false" />
+    <VerticalLayout bordersize="1" width="650" height="445" bkcolor="#FFFFFFFF" bordercolor="#00FFA924">
+		<Control name="ctrlGrayUserMgr" float="true" pos="0,0,0,0" width="800" height="515" bkcolor="#FFB6B8B9" />
+        <HorizontalLayout width="670">
+            <Button name="btnMgrNew" text="开户" float="true" pos="108,58,0,0" width="193" height="83" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="0" align="center" 
+			normalimage="file='../Resource/btn_trans_84.png' source='0,0,263,84'" hotimage="file='../Resource/btn_trans_84.png' source='263,0,526,84'" pushedimage="file='../Resource/btn_trans_84.png' source='526,0,789,84'"/>
+            <Button name="btnMgrDel" text="销户" float="true" pos="341,58,0,0" width="193" height="83" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="0" align="center" normalimage="file='../Resource/btn_trans_84.png' source='0,0,263,84'" hotimage="file='../Resource/btn_trans_84.png' source='263,0,526,84'" pushedimage="file='../Resource/btn_trans_84.png' source='526,0,789,84'"/>
+            <Button name="btnMgrQnM" text="查询/修改信息" float="true" pos="108,190,0,0" width="193" height="83" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="0" align="center" normalimage="file='../Resource/btn_trans_84.png' source='0,0,263,84'" hotimage="file='../Resource/btn_trans_84.png' source='263,0,526,84'" pushedimage="file='../Resource/btn_trans_84.png' source='526,0,789,84'"/>
+            <Button name="btnMgrQR" text="缴费记录" float="true" pos="341,190,0,0" width="193" height="83" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="0" align="center" normalimage="file='../Resource/btn_trans_84.png' source='0,0,263,84'" hotimage="file='../Resource/btn_trans_84.png' source='263,0,526,84'" pushedimage="file='../Resource/btn_trans_84.png' source='526,0,789,84'"/>
+        </HorizontalLayout>
+    </VerticalLayout>
+</Window>

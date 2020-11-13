@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="670,465">
+    <Font name="微软雅黑" size="37" bold="false" italic="false" />
+    <Font name="微软雅黑" size="20" bold="false" italic="false" />
+    <Font name="微软雅黑" size="14" bold="false" italic="false" />
+    <VerticalLayout bordersize="1" width="650" height="445" bkcolor="#FFFFFFFF" bordercolor="#00FFA924">
+		<Control name="ctrlGrayCharge" float="true" pos="0,0,0,0" width="800" height="515" bkcolor="#FFB6B8B9" />
+        <HorizontalLayout width="670">
+            <Label name="labelMSISDN" text="用户电话号码：" float="true" pos="49,32,0,0" width="169" height="57" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="1" />
+            <Edit name="editMSISDN" bordersize="1" float="true" pos="244,45,0,0" width="217" height="40" bkcolor="#FFFFFFFF" bordercolor="#00FFA924" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="1" />
+            <Button name="btnMSISDN" text="查询号码" float="true" pos="514,46,0,0" width="95" height="40" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" font="2" align="center" normalimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;0,0,26,26&apos; corner=&apos;10,10,10,10&apos;" hotimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;26,0,52,26&apos; corner=&apos;10,10,10,10&apos;" pushedimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;52,0,78,26&apos; corner=&apos;10,10,10,10&apos;" />
+            <Container name="containerCharge">
+                <Text text="姓名：" float="true" pos="49,126,0,0" width="68" height="30" textpadding="2,0,2,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="1" align="wrap" />
+                <Text name="textName" text="唐家三少" float="true" pos="122,127,0,0" width="92" height="30" textpadding="2,0,2,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="1" align="wrap" />
+                <Text text="余额：" float="true" pos="236,127,0,0" width="75" height="30" textpadding="2,0,2,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="1" align="wrap" />
+                <Text name="textBalance" text="1986.52" float="true" pos="319,127,0,0" width="90" height="30" textpadding="2,0,2,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="1" align="wrap" />
+                <Text text="状态：" float="true" pos="470,127,0,0" width="78" height="30" textpadding="2,0,2,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="1" align="wrap" />
+                <Text name="textStatus" text="正常" float="true" pos="551,127,0,0" width="85" height="30" textpadding="2,0,2,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="1" align="wrap" />
+                <Text text="当前套餐：" float="true" pos="45,198,0,0" width="111" height="30" textpadding="2,0,2,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="1" align="wrap" />
+                <Text name="textPlan" text="2018校园优惠（长：0.15，市：0.15，漫：0.15）" float="true" pos="163,198,0,0" width="482" height="62" textpadding="2,0,2,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="1" align="wrap" />
+                <Text text="元" float="true" pos="418,126,0,0" width="33" height="30" textpadding="2,0,2,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="1" align="wrap" />
+                <Button name="btnCharge" text="缴费" float="true" pos="532,309,0,0" width="95" height="40" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" font="2" align="center" normalimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;0,0,26,26&apos; corner=&apos;10,10,10,10&apos;" hotimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;26,0,52,26&apos; corner=&apos;10,10,10,10&apos;" pushedimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;52,0,78,26&apos; corner=&apos;10,10,10,10&apos;" />
+                <Text text="缴费：" float="true" pos="46,311,0,0" width="74" height="30" textpadding="2,0,2,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="1" align="wrap" />
+                <Edit name="editCharge" bordersize="1" float="true" pos="128,311,0,0" width="82" height="40" bkcolor="#FFFFFFFF" bordercolor="#00FFA924" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="1" />
+                <Text text="元" float="true" pos="216,311,0,0" width="30" height="30" textpadding="2,0,2,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="1" align="wrap" />
+                <Text text="缴费方式：" float="true" pos="266,311,0,0" width="118" height="40" textpadding="2,0,2,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="1" align="wrap" />
+                <Combo name="comboPayMethod" text="现金" tooltip="请选择用户缴费方式" bordersize="1" float="true" pos="393,312,0,0" width="90" height="40" bordercolor="#00FFA924" itemtextcolor="#FF000000" itemselectedtextcolor="#FF000000" itemselectedbkcolor="#FFC1E3FF" itemhottextcolor="#FF000000" itemhotbkcolor="#FFE9F5FF" itemdisabledtextcolor="#FFCCCCCC" itemdisabledbkcolor="#FFFFFFFF" normalimage="file=&apos;../Resource/Combo_nor.bmp&apos;" hotimage="file=&apos;../Resource/Combo_over.bmp&apos; " pushedimage="file=&apos;../Resource/Combo_over.bmp&apos;" dropboxsize="100,150">
+					<ListLabelElement text="现金" font="1" selected="true" />
+					<ListLabelElement text="微信" font="1" />
+					<ListLabelElement text="微信" font="1" />
+					<ListLabelElement text="支付宝" font="1" />
+                </Combo>
+            </Container>
+        </HorizontalLayout>
+    </VerticalLayout>
+</Window>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<ListContainerElement height="68" width="720">
+		<VLayoutHover height="68" bkcolor="#ffffffff">
+			<FIcon name="file_icon" float="true" pos="40,16,76,52"/>
+			<Label name="lb_item" float="true" pos="94,16,310,36" font="140" textcolor="#ff767676" align="left" valign="center" endellipsis="true"/>
+			<Label name="lb_detail" float="true" pos="94,36,310,52" font="120" textcolor="#ff767676" align="left" valign="center" endellipsis="true" />
+			<Label name="lb_orig_status" float="true" pos="318,0,408,68" align="left" valign="center" text="启动" font="120" textpadding="25,0,0,0" textcolor="#ff767676"/>
+			<Label name="lb_modify_time" float="true" pos="408,0,498,68" align="left" valign="center" text="2016.10.18" font="120" textpadding="10,0,0,0" textcolor="#ff767676"/>
+			<Label name="lb_cur_status" float="true" pos="498,0,588,68" align="left" valign="center" text="已禁用" font="120"  textpadding="20,0,0,0" bkimage="file='ani_restore.png' source='0,0,44,52' dest='23,8,67,60'" userdata="num=19 size=44,52" textcolor="#ff767676"/> <!--bkimage="file='ani_restore.png' source='0,0,44,52' dest='23,8,67,60'"-->
+			<Button name="btn_restore" float="true" pos="588,0,678,68" text="恢复原始状态" font="120" textcolor="#ff00a3f2" disabledtextcolor="#ffd0d0d0" visible="false"/>
+			<Label float="true" pos="20,67,700,68" bkcolor="#ffededed"/>
+		</VLayoutHover>
+	</ListContainerElement>
+</Window>

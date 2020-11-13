@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="600,350">
+    <Font name="微软雅黑" size="20" bold="false" italic="false" />
+    <VerticalLayout width="600" height="350" bkcolor="#FFFFFFFF">
+        <Label text="姓名：" float="true" pos="132,67,0,0" width="60" height="30" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="0" />
+        <Edit name="editName" bordersize="1" float="true" pos="196,66,0,0" width="103" height="30" bkcolor="#FFFFFFFF" bordercolor="#00FFA924" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="0" />
+        <Edit name="editGender" bordersize="1" float="true" pos="390,67,0,0" width="75" height="30" bkcolor="#FFFFFFFF" bordercolor="#00FFA924" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="0" />
+        <Label text="性别：" float="true" pos="316,67,0,0" width="60" height="30" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="0" />
+        <Label text="等级：" float="true" pos="132,152,0,0" width="60" height="30" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="0" />
+        <Combo name="comboClass" text="收费员" bordersize="1" float="true" pos="200,151,0,0" width="60" height="30" bordercolor="#00FFA924" itemtextcolor="#FF000000" itemselectedtextcolor="#FF000000" itemselectedbkcolor="#FFC1E3FF" itemhottextcolor="#FF000000" itemhotbkcolor="#FFE9F5FF" itemdisabledtextcolor="#FFCCCCCC" itemdisabledbkcolor="#FFFFFFFF" dropboxsize="0,150">
+			<ListLabelElement text="收费员" font="0" />
+			<ListLabelElement text="管理员" font="0" />
+        </Combo>
+        <Label text="密码：" float="true" pos="316,152,0,0" width="60" height="30" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="0" />
+        <Edit name="editPwd" bordersize="1" float="true" pos="390,151,0,0" width="134" height="30" bkcolor="#FFFFFFFF" bordercolor="#00FFA924" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="0" password="true" />
+        <Button name="btnAdd" text="添加" float="true" pos="162,254,0,0" width="60" height="31" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" font="0" align="center" normalimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;0,0,26,26&apos; corner=&apos;10,10,10,10&apos;" hotimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;26,0,52,26&apos; corner=&apos;10,10,10,10&apos;" pushedimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;52,0,78,26&apos; corner=&apos;10,10,10,10&apos;" />
+        <Button name="btnReset" text="重置" float="true" pos="383,254,0,0" width="60" height="30" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" font="0" align="center" normalimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;0,0,26,26&apos; corner=&apos;10,10,10,10&apos;" hotimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;26,0,52,26&apos; corner=&apos;10,10,10,10&apos;" pushedimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;52,0,78,26&apos; corner=&apos;10,10,10,10&apos;" />
+    </VerticalLayout>
+</Window>

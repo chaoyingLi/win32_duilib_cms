@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="720,485" mininfo="720,485" maxinfo="720,485" roundcorner="2,2">
+	<Fonts xmlfile="shared_fonts.xml" shared="true"/>
+	<Styles xmlfile="shared_styles.xml" shared="true"/>
+	<Include source="shared_scrollbar.xml" />
+	
+	<VerticalLayout bkcolor="#FFFFFFFF" >
+		<HorizontalLayout name="hlayout_top" height="118" bkcolor="#FFF4f4f4">
+			<Label name="label_title" float="true" pos="20,0,250,42" valign="center" text="火绒启动优化-一键优化" textcolor="#ff424242"/>
+			<Button name="btn_close" float="true" pos="666,15,702,39" tooltip="关闭"
+				normalimage="file='icon_close.png' source='0,0,36,24'"
+				hotimage="file='icon_close.png' source='36,0,72,24'"
+				pushedimage="file='icon_close.png' source='72,0,108,24'"/>
+			<Label name="lb_logo_computer" float="true" pos="34,52,82,92" bkimage="icon_pop_logo.png"/>
+			<TabLayout name="tlayout_summary" float="true" pos="107,52,720,112" selectedid="0">
+				<HorizontalLayout name="hlayout_ready">
+					<Label name="lb_pre_summary" float="true" pos="0,0,300,28" valign="center" align="left" font="180" 
+							textcolor="#ff424242" text="发现 {c #f26223}size{/c} 项可优化启动项目" showhtml="true" userdata="发现 {c #f26223}size{/c} 项可优化启动项目"/>
+					<Label name="lb_detail" float="true" pos="0,28,300,40" valign="center" align="left" font="120" textcolor="#ff767676" text="选择一键优化可禁用项目，提高开机速度。"/>
+					<Button name="btn_optimize" float="true" pos="450,4,540,32" font="120" valign="center" align="center" textcolor="#ffffffff" text="一键优化" 
+						normalimage="file='icon_btn.png' source='0,0,26,26' corner='10,10,10,10'"
+						hotimage="file='icon_btn.png' source='26,0,52,26' corner='10,10,10,10'"
+						pushedimage="file='icon_btn.png' source='52,0,78,26' corner='10,10,10,10'"
+						disabledimage="file='icon_btn.png' source='78,0,104,26' corner='10,10,10,10'"/>
+				</HorizontalLayout>
+				<HorizontalLayout name="hlayout_optimizing">
+					<Label name="lb_summary" float="true" pos="0,0,300,28" valign="center" align="left" font="180" 
+							textcolor="#ff424242" showhtml="true" text="正在优化启动项目"/>
+					<Label name="lb_detail" float="true" pos="0,28,300,40" valign="center" align="left" font="120" textcolor="#ff767676" text="优化可禁用项目，提高开机速度。"/>
+					<Button name="btn_optimize" float="true" pos="450,4,540,32" font="120" valign="center" align="center" textcolor="#ffffffff" text="优化中"
+						enabled="false" bkimage="file='icon_btn.png' source='78,0,104,26' corner='10,10,10,10'"/>
+				</HorizontalLayout>
+				<HorizontalLayout name="hlayout_optimizied">
+					<Label name="lb_optimized_summary" float="true" pos="0,0,300,28" valign="center" align="left" font="180" 
+							textcolor="#ff424242" showhtml="true" text="优化完成，已禁用0项" userdata="优化完成，已禁用num项"/>
+					<Label name="lb_detail" float="true" pos="0,28,300,40" valign="center" align="left" font="120" textcolor="#ff767676" text="手动管理启动项目，可以进一步优化开机速度。"/>
+				</HorizontalLayout>
+			</TabLayout>
+		</HorizontalLayout>
+		<TabLayout name="tlayout_lists" height="356" selectedid="0">
+			<List name="list_items" style="list_category" padding="20,0,0,0" containeritemxml="optimize_item.xml"/>
+			<VerticalLayout name="vlayout_result">
+				<Label float="true" pos="303,72,416,185" bkimage="icon_finished.png"/>
+				<Label float="true" pos="300,212,420,242" align="center" valign="center" text="优化完成" font="200" textcolor="#ff424242"/>
+				<Label name="lb_content_summary" float="true" pos="300,242,420,262" align="center" valign="center" text="共优化0个项目" font="140" textcolor="#ff767676" userdata="共优化num个项目"/>
+			</VerticalLayout>
+			<VerticalLayout name="vlayout_empty">
+				<Label float="true" pos="310,83,410,183" bkimage="icon_empty.png"/>
+				<Label float="true" pos="0,203,720,230"  valign="top" align="center" font="140" text="当前没有可优化的启动项" textcolor="#ff767676"/>
+			</VerticalLayout>
+		</TabLayout>
+    </VerticalLayout>
+</Window>

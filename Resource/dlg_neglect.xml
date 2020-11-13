@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="720,485" mininfo="720,485" maxinfo="720,485" roundcorner="2,2">
+	<Fonts xmlfile="shared_fonts.xml" shared="true"/>
+	<Styles xmlfile="shared_styles.xml" shared="true"/>
+	<Include source="shared_scrollbar.xml" />
+	
+	<VerticalLayout bkcolor="#FFFFFFFF" height="485">
+		<HorizontalLayout name="hlayout_top" height="79">
+			<Label name="label_title" float="true" pos="20,0,250,42" valign="center" text="火绒启动优化-忽略列表" textcolor="#ff424242"/>
+			<Button name="btn_close" float="true" pos="666,15,702,39" tooltip="关闭"
+				normalimage="file='icon_close.png' source='0,0,36,24'"
+				hotimage="file='icon_close.png' source='36,0,72,24'"
+				pushedimage="file='icon_close.png' source='72,0,108,24'"/>
+			<Label name="lb_warning" float="true" pos="40,49,440,79" font="140" textcolor="#fff26223" text="当前忽略了0个启动项，将不对忽略项目进行管理。" userdata="当前忽略了num个启动项，将不对忽略项目进行管理。"/>
+		</HorizontalLayout>
+		<VerticalLayout name="vlayout_mid" height="373">
+			<HorizontalLayout name="hlayout_header" height="33" bkcolor="#fff4f4f4">
+				<Label float="true" pos="0,0,720,1" bkcolor="#ffededed"/>
+				<Label float="true" pos="40,0,200,33" text="启动项名称" font="140" textcolor="#ff767676" valign="center" align="left"/>
+				<Label float="true" pos="550,0,720,33" text="类别" font="140" textcolor="#ff767676" valign="center" align="left"/>
+				<Label float="true" pos="0,31,720,33" bkcolor="#ffededed"/>
+			</HorizontalLayout>
+			<TabLayout name="tlayout_list">
+				<List name="list_items" padding="20,0,0,0" keyboard="true" itemselectedbkcolor="#00000000" itemhotbkcolor="#00000000"
+						header="false" vscrollbar="true" containeritemxml="neglect_item.xml"/>
+				<VerticalLayout name="vlayout_empty">
+					<Label float="true" pos="310,83,410,183" bkimage="icon_empty.png"/>
+					<Label float="true" pos="0,203,720,230"  valign="top" align="center" font="140" text="当前没有忽略的启动项" textcolor="#ff767676"/>
+				</VerticalLayout>
+			</TabLayout>
+		</VerticalLayout>
+		<VerticalLayout name="vlayout_bottom" >
+			<Label float="true" pos="0,0,720,1" bkcolor="#ffededed"/>
+		</VerticalLayout>
+    </VerticalLayout>
+</Window>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="670,465" caption="0,0,0,128" mininfo="670,465">
+    <Font id="0" name="微软雅黑" size="24" bold="false" italic="false" />
+    <Font id="1" name="微软雅黑" size="20" bold="false" italic="false" />
+    <Font id="2" name="微软雅黑" size="14" bold="false" italic="false" />
+    <VerticalLayout bordersize="1" width="650" height="445" bkcolor="#FFFFFFFF" bordercolor="#00FFA924">
+        <Control name="ctrlGrayHome" visible="false" float="true" pos="0,0,0,0" width="800" height="515" bkcolor="#FFB6B8B9" />
+        <HorizontalLayout height="300">
+            <Label name="labelWelcome" text="萨师煊，您好" float="true" pos="204,51,0,0" width="262" height="107" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="1" align="center" />
+            <Label name="labelClass" text="账户：操作员" float="true" pos="237,192,0,0" width="196" height="57" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="1" align="center" />
+        </HorizontalLayout>
+        <HorizontalLayout>
+            <Button name="btnChangePwd" text="修改密码" float="true" pos="288,76,0,0" width="95" height="40" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" font="2" align="center" normalimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;0,0,26,26&apos; corner=&apos;10,10,10,10&apos;" hotimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;26,0,52,26&apos; corner=&apos;10,10,10,10&apos;" pushedimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;52,0,78,26&apos; corner=&apos;10,10,10,10&apos;" />
+        </HorizontalLayout>
+    </VerticalLayout>
+</Window>

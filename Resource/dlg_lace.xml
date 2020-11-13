@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window bktrans="true">
+	<VerticalLayout bkimage="file='bk_border_2.png' corner='10,10,10,10'" inset="10,10,10,10">
+		<VerticalLayout bkcolor="#00000000" bordersize="0">
+		</VerticalLayout>
+	</VerticalLayout>
+</Window>

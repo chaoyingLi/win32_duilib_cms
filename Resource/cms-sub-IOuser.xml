@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="400,100">
+    <Font id="0" name="微软雅黑" size="14" bold="false" italic="false" />
+    <Font id="1" name="微软雅黑" size="20" bold="false" italic="false" />
+    <VerticalLayout width="400" height="100" bkcolor="#FFFFFFFF">
+        <HorizontalLayout height="40">
+            <VerticalLayout width="330">
+                <Label text="导入/导出用户数据" float="true" pos="24,7,0,0" width="226" height="30" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="1" />
+            </VerticalLayout>
+            <VerticalLayout>
+                <Button name="closebtn" float="true" pos="25,6,0,0" width="36" height="24" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage=" file=&apos;../Resource/icon_close.png&apos; source=&apos;0,0,36,24&apos;" hotimage=" file=&apos;../Resource/icon_close.png&apos; source=&apos;36,0,72,24&apos;" pushedimage=" file=&apos;../Resource/icon_close.png&apos; source=&apos;72,0,108,24&apos;" />
+            </VerticalLayout>
+        </HorizontalLayout>
+        <HorizontalLayout>
+            <Button name="btnIn" text="导入" float="true" pos="102,20,0,0" width="60" height="30" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" font="0" align="center" normalimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;0,0,26,26&apos; corner=&apos;10,10,10,10&apos;" hotimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;26,0,52,26&apos; corner=&apos;10,10,10,10&apos;" pushedimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;52,0,78,26&apos; corner=&apos;10,10,10,10&apos;" />
+            <Button name="btnOut" text="导出" float="true" pos="240,20,0,0" width="60" height="30" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" font="0" align="center" normalimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;0,0,26,26&apos; corner=&apos;10,10,10,10&apos;" hotimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;26,0,52,26&apos; corner=&apos;10,10,10,10&apos;" pushedimage="file=&apos;../Resource/icon_btn.png&apos; source=&apos;52,0,78,26&apos; corner=&apos;10,10,10,10&apos;" />
+        </HorizontalLayout>
+    </VerticalLayout>
+</Window>

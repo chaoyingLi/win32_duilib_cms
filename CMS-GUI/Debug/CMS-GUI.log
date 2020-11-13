@@ -1,0 +1,4 @@
+﻿  CMS-db.cpp
+c:\users\ozzie\documents\visual studio 2015\projects\cms-gui\cms-gui\cms-db.cpp(759): warning C4267: “参数”: 从“size_t”转换到“SQLSMALLINT”，可能丢失数据
+  CMS-GUI.vcxproj -> C:\Users\Ozzie\Documents\Visual Studio 2015\Projects\CMS-GUI\Debug\CMS-GUI.exe
+  CMS-GUI.vcxproj -> C:\Users\Ozzie\Documents\Visual Studio 2015\Projects\CMS-GUI\Debug\CMS-GUI.pdb (Full PDB)
