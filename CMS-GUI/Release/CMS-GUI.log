@@ -1,28 +1,13 @@
-﻿  CMS-db.cpp
-CMS-db.cpp(759): warning C4267: “参数”: 从“size_t”转换到“SQLSMALLINT”，可能丢失数据
-  CMS-gui.cpp
-f:\dev\lib\duilib\include\Core/UIManager.h(45): warning C4091: “typedef ”: 没有声明变量时忽略“DuiLib::EVENTTYPE_UI”的左侧
-CMS-gui.cpp(3864): warning C4996: 'wcsncpy': This function or variable may be unsafe. Consider using wcsncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\corecrt_wstring.h(204): note: 参见“wcsncpy”的声明
-CMS-gui.cpp(3870): warning C4996: 'wcsncpy': This function or variable may be unsafe. Consider using wcsncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\corecrt_wstring.h(204): note: 参见“wcsncpy”的声明
-CMS-gui.cpp(3874): warning C4996: 'wcsncpy': This function or variable may be unsafe. Consider using wcsncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\corecrt_wstring.h(204): note: 参见“wcsncpy”的声明
-CMS-gui.cpp(3878): warning C4996: 'wcsncpy': This function or variable may be unsafe. Consider using wcsncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\corecrt_wstring.h(204): note: 参见“wcsncpy”的声明
-CMS-gui.cpp(3882): warning C4996: 'wcsncpy': This function or variable may be unsafe. Consider using wcsncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\corecrt_wstring.h(204): note: 参见“wcsncpy”的声明
-  CMS-md5.cpp
-CMS-md5.cpp(342): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\stdio.h(1769): note: 参见“sprintf”的声明
-  cms-pdf.cpp
-cms-pdf.cpp(45): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
-  CMS-utils.cpp
-CMS-utils.cpp(124): warning C4244: “初始化”: 从“long double”转换到“float”，可能丢失数据
-CMS-utils.cpp(130): warning C4996: 'ltoa': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _ltoa. See online help for details.
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\stdlib.h(1323): note: 参见“ltoa”的声明
+﻿  CMS-gui.cpp
+C:\code\cpp\3rd-party\duilib-master\DuiLib\Core\UIManager.h(45,2): warning C4091: “typedef ”: 没有声明变量时忽略“DuiLib::EVENTTYPE_UI”的左侧
+C:\code\cpp\win32_duilib_cms\CMS-GUI\CMS-gui.cpp(3865,6): warning C4996: 'wcsncpy': This function or variable may be unsafe. Consider using wcsncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\code\cpp\win32_duilib_cms\CMS-GUI\CMS-gui.cpp(3871,6): warning C4996: 'wcsncpy': This function or variable may be unsafe. Consider using wcsncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\code\cpp\win32_duilib_cms\CMS-GUI\CMS-gui.cpp(3875,6): warning C4996: 'wcsncpy': This function or variable may be unsafe. Consider using wcsncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\code\cpp\win32_duilib_cms\CMS-GUI\CMS-gui.cpp(3879,6): warning C4996: 'wcsncpy': This function or variable may be unsafe. Consider using wcsncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\code\cpp\win32_duilib_cms\CMS-GUI\CMS-gui.cpp(3883,6): warning C4996: 'wcsncpy': This function or variable may be unsafe. Consider using wcsncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   正在生成代码
-  All 841 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  1 of 728 functions ( 0.1%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    2 functions had inline decision re-evaluated but remain unchanged
   已完成代码的生成
-  CMS-GUI.vcxproj -> F:\Projects\C++\CMS-GUI\Release\CMS-GUI.exe
-  CMS-GUI.vcxproj -> F:\Projects\C++\CMS-GUI\Release\CMS-GUI.pdb (Full PDB)
+  CMS-GUI.vcxproj -> C:\code\cpp\win32_duilib_cms\Release\CMS-GUI.exe

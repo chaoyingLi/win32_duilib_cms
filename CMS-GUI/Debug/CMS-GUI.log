@@ -1,4 +1,8 @@
-﻿  CMS-db.cpp
-c:\users\ozzie\documents\visual studio 2015\projects\cms-gui\cms-gui\cms-db.cpp(759): warning C4267: “参数”: 从“size_t”转换到“SQLSMALLINT”，可能丢失数据
-  CMS-GUI.vcxproj -> C:\Users\Ozzie\Documents\Visual Studio 2015\Projects\CMS-GUI\Debug\CMS-GUI.exe
-  CMS-GUI.vcxproj -> C:\Users\Ozzie\Documents\Visual Studio 2015\Projects\CMS-GUI\Debug\CMS-GUI.pdb (Full PDB)
+﻿  CMS-gui.cpp
+C:\code\cpp\3rd-party\duilib-master\DuiLib\Core\UIManager.h(45,2): warning C4091: “typedef ”: 没有声明变量时忽略“DuiLib::EVENTTYPE_UI”的左侧
+C:\code\cpp\win32_duilib_cms\CMS-GUI\CMS-gui.cpp(3865,6): warning C4996: 'wcsncpy': This function or variable may be unsafe. Consider using wcsncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\code\cpp\win32_duilib_cms\CMS-GUI\CMS-gui.cpp(3871,6): warning C4996: 'wcsncpy': This function or variable may be unsafe. Consider using wcsncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\code\cpp\win32_duilib_cms\CMS-GUI\CMS-gui.cpp(3875,6): warning C4996: 'wcsncpy': This function or variable may be unsafe. Consider using wcsncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\code\cpp\win32_duilib_cms\CMS-GUI\CMS-gui.cpp(3879,6): warning C4996: 'wcsncpy': This function or variable may be unsafe. Consider using wcsncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\code\cpp\win32_duilib_cms\CMS-GUI\CMS-gui.cpp(3883,6): warning C4996: 'wcsncpy': This function or variable may be unsafe. Consider using wcsncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  CMS-GUI.vcxproj -> C:\code\cpp\win32_duilib_cms\Debug\CMS-GUI.exe

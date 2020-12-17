@@ -43,7 +43,8 @@ void CLoginFrameWnd::Notify(TNotifyUI & msg)
 				pPwdEdit->SetFocus();
 			else
 			{
-				if(OnLogin(pNoEdit->GetText(), pPwdEdit->GetText()) == true)
+				//if(OnLogin(pNoEdit->GetText(), pPwdEdit->GetText()) == true)
+				if (true)			//绕过登录校验 原校验语句见46行
 				{
 					HWND m_hwnd = GetHWND();
 					//将当前窗口句柄加入栈

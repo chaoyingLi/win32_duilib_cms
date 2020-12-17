@@ -1,18 +1,34 @@
-# Charge Manager System based on duilib
+# 基于Duilib的Win32桌面应用程序
 
-Windows Desktop App
+编译环境： Microsoft Visual Studio 2019, Windows 10 Build 19042
 
-Compiled & Built by Microsoft Visual Studio 2015
-## ToDo
+## 环境配置
 
-* Code optimise for grammar, remarks, etc
-* Maybe SQL Server is needed...
+初次使用，需编译生成lib，[参考](https://www.cnblogs.com/Alberl/p/3342030.html)。
 
-## History
+另，也可使用vcpkg配置Duilib环境，[参考](https://github.com/duilib/duilib)。
+
+## To-Do
+
+* 代码优化，项目结构、语法、注释等……（确实是屎山Orz）
+* 数据库
+
+## 更新历史
+
+### 2020/12/17
+
+VS2019重新编译&生成，项目能跑起来咯（绕过了登录时的数据库过程lollol）
+
 ### 2020/11/13
-Initial commit to Github
+
+从历史的故纸堆中找到代码，初次提交Github
+
+---
+
 ## Third-Party Library
+
 ### duilib
+
 The MIT License (MIT)
 
 Copyright (c) 2013 duilib
@@ -35,6 +51,7 @@ IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ### PDFLib
+
 Copyright (c) 2015 imal hasaranga imal.hasaranga@gmail.com
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
@@ -42,7 +59,9 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
 ### libxls
+
 libxls -- A multiplatform, C/C++ library for parsing Excel(TM) files.
 
 Copyright 2004 Komarov Valery
