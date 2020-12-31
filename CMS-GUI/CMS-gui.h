@@ -22,27 +22,27 @@ using namespace DuiLib;
 
 //定义样式的XML文件位置
 #define	DUI_XML_LOGIN						"../Resource/cms-login.xml"
-#define	DUI_XML_OPERATOR				"../Resource/cms-operator.xml"
-#define	DUI_XML_OPERATOR_HOME	"../Resource/cms-operator-home.xml"
-#define	DUI_XML_OPERATOR_CHARGE	"../Resource/cms-operator-charge.xml"
-#define	DUI_XML_OPERATOR_USERMGR	"../Resource/cms-operator-usermgr.xml"
-#define	DUI_XML_OPERATOR_ADMIN	"../Resource/cms-operator-admin.xml"
-#define	DUI_XML_ADMIN					"../Resource/cms-admin.xml"
-#define	DUI_XML_SUB_CHANGEPWD			"../Resource/cms-sub-changepwd.xml"
-#define	DUI_XML_SUB_CHARGED			"../Resource/cms-sub-charged.xml"
-#define	DUI_XML_SUB_NEW					"../Resource/cms-sub-new.xml"
+#define	DUI_XML_OPERATOR					"../Resource/cms-operator.xml"
+#define	DUI_XML_OPERATOR_HOME				"../Resource/cms-operator-home.xml"
+#define	DUI_XML_OPERATOR_CHARGE				"../Resource/cms-operator-charge.xml"
+#define	DUI_XML_OPERATOR_USERMGR			"../Resource/cms-operator-usermgr.xml"
+#define	DUI_XML_OPERATOR_ADMIN				"../Resource/cms-operator-admin.xml"
+#define	DUI_XML_ADMIN						"../Resource/cms-admin.xml"
+#define	DUI_XML_SUB_CHANGEPWD				"../Resource/cms-sub-changepwd.xml"
+#define	DUI_XML_SUB_CHARGED					"../Resource/cms-sub-charged.xml"
+#define	DUI_XML_SUB_NEW						"../Resource/cms-sub-new.xml"
 #define	DUI_XML_SUB_DEL						"../Resource/cms-sub-del.xml"
-#define	DUI_XML_SUB_QNM					"../Resource/cms-sub-qnm.xml"
+#define	DUI_XML_SUB_QNM						"../Resource/cms-sub-qnm.xml"
 #define	DUI_XML_SUB_QR						"../Resource/cms-sub-qr.xml"
-#define	DUI_XML_SUB_OPERATORMGR	"../Resource/cms-sub-OperatorMgr.xml"
-#define	DUI_XML_SUB_OPERATORMGR_NEW	"../Resource/cms-sub-OperatorMgr-New.xml"
-#define	DUI_XML_SUB_OPERATORMGR_QMD	"../Resource/cms-sub-OperatorMgr-QMD.xml"
-#define	DUI_XML_SUB_MODIFYOPERATOR		"../Resource/cms-sub-ModifyOperator.xml"
-#define	DUI_XML_SUB_PLANMGR	"../Resource/cms-sub-PlanMgr.xml"
-#define	DUI_XML_SUB_PLANMGR_NEW	"../Resource/cms-sub-PlanMgr-New.xml"
-#define	DUI_XML_SUB_PLANMGR_QMD	"../Resource/cms-sub-PlanMgr-QMD.xml"
-#define	DUI_XML_SUB_MODIFYPLAN		"../Resource/cms-sub-ModifyPlan.xml"
-#define	DUI_XML_SUB_IOUSER				"../Resource/cms-sub-IOuser.xml"
+#define	DUI_XML_SUB_OPERATORMGR				"../Resource/cms-sub-OperatorMgr.xml"
+#define	DUI_XML_SUB_OPERATORMGR_NEW			"../Resource/cms-sub-OperatorMgr-New.xml"
+#define	DUI_XML_SUB_OPERATORMGR_QMD			"../Resource/cms-sub-OperatorMgr-QMD.xml"
+#define	DUI_XML_SUB_MODIFYOPERATOR			"../Resource/cms-sub-ModifyOperator.xml"
+#define	DUI_XML_SUB_PLANMGR					"../Resource/cms-sub-PlanMgr.xml"
+#define	DUI_XML_SUB_PLANMGR_NEW				"../Resource/cms-sub-PlanMgr-New.xml"
+#define	DUI_XML_SUB_PLANMGR_QMD				"../Resource/cms-sub-PlanMgr-QMD.xml"
+#define	DUI_XML_SUB_MODIFYPLAN				"../Resource/cms-sub-ModifyPlan.xml"
+#define	DUI_XML_SUB_IOUSER					"../Resource/cms-sub-IOuser.xml"
 
 
 
@@ -60,22 +60,22 @@ struct ChargedInfo
 };
 
 //线程创建
-void MainThread(void * pParam);					//创建主窗口线程
-void ChangePwdThread(void * pParam);		//创建修改密码线程
-void ChargedThread(void * pParam);				//创建缴费成功线程
-void NewThread(void * pParam);					//创建开户线程
+void MainThread(void * pParam);						//创建主窗口线程
+void ChangePwdThread(void * pParam);				//创建修改密码线程
+void ChargedThread(void * pParam);					//创建缴费成功线程
+void NewThread(void * pParam);						//创建开户线程
 void DelThread(void * pParam);						//创建销户线程
-void QnMThread(void * pParam);					//创建查询/修改线程
+void QnMThread(void * pParam);						//创建查询/修改线程
 void QRThread(void * pParam);						//创建查询缴费记录线程
-void OperatorMgrThread(void * pParam);		//创建收费员管理线程
-void ModifyOperatorThread(void * pParam);	//创建修改收费员线程
-void PlanMgrThread(void * pParam);				//创建收费员管理线程
-void ModifyPlanThread(void * pParam);			//创建修改收费员线程
+void OperatorMgrThread(void * pParam);				//创建收费员管理线程
+void ModifyOperatorThread(void * pParam);			//创建修改收费员线程
+void PlanMgrThread(void * pParam);					//创建收费员管理线程
+void ModifyPlanThread(void * pParam);				//创建修改收费员线程
 void IOuserThread(void * pParam);					//创建导入导出用户数据线程
 
 
-static int OperatorNo;			//当前操作员/管理员工号
-static int OperatorClass;		//当前操作员/管理员等级
+static int OperatorNo;								//当前操作员/管理员工号
+static int OperatorClass;							//当前操作员/管理员等级
 stack<HWND> stackHwnd;
 
 class CLoginFrameWnd : public WindowImplBase
